@@ -8,44 +8,47 @@ import ProductCard from './ProductCard';
 
 const ToggleGroup = styled.div`
   display: flex;
-  border: 1.5px solid  white;
-  color: white;
+  
+ background-color: #D4AF37;  /* Gold background */
+  color: #333;
   font-size: 16px;
-  border-radius: 12px;
-  font-weight: 300;
-  margin: 22px 0px;
-
+ height: 100px;
+  font-weight: 500;
+ 
+  margin-top: 80px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  
   @media screen and (max-width: 768px) {
     font-size: 12px;
   }
 `;
 
 const ToggleButton = styled.div`
-  padding: 8px 18px;
+ padding: 10px 20px;
   cursor: pointer;
-  border-radius: 6px;
-  background-color: grey;
-${({ active }) =>
-  active &&
-  `
-  background-color: black;
-  `}
-
- 
+  border-radius: 0;
+  font-weight: 600;
+  color: #333; /* Dark color for text */
+  background-color: ${({ active }) => (active ? '#8B4513' : 'transparent')}; /* Dark brown for active button */
+  transition: background-color 0.3s ease, color 0.3s ease;
 
   &:hover {
-    background-color: black;
-    
+    background-color: #A0522D; /* Lighter brown on hover */
+    color: #f5f5f5; /* Light text color on hover */
   }
 
   @media screen and (max-width: 768px) {
-  padding: 6px 8px;
-  border-radius: 4px;
+    padding: 6px 12px;
+  }
 `;
 
+ 
+
+ 
 const Divider = styled.div`
-  width: 1.5px;
-  background-color: white;  
+ width: 1.5px;
+  background-color: #fff; /* White divider for contrast */
 `;
 
 

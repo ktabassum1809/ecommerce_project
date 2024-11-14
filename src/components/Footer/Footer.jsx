@@ -4,7 +4,9 @@ import React from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import './Footer.css';
 
+
 const Footer = () => {
+   
     return (
         <footer className="footer">
             <div className="Back-top">
@@ -22,14 +24,17 @@ const Footer = () => {
                     <ul>
                         <li><a href="#" aria-label="Go to home section">Home</a></li>
                         <li><a href="#about" aria-label="Learn more about us">About</a></li>
-                        <li><a href="#services" aria-label="Explore our services">Services</a></li>
+                        <li><a aria-label="Explore our services">Services</a></li>
                         <li><a href="#" aria-label="Contact us">Contact</a></li>
+                      
                     </ul>
+                  
                 </div>
                 <div className="footer-section contact">
                     <h3>Contact Us</h3>
                     <p><a href="mailto:info@example.com" aria-label="Email us at info@example.com">Email: info@example.com</a></p>
                     <p><a href="tel:+1234567890" aria-label="Call us at +123 456 7890">Phone: +123 456 7890</a></p>
+                   
                 </div>
                 <div className="footer-section social">
                     <h3>Follow Us</h3>

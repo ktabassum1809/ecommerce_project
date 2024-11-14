@@ -92,10 +92,12 @@
   .burger-menu {
     display: block;
     color:white;
-    position: relative;
+    position: absolute;
     font-size: 1.8em;
-    right: 10px;
-    float: right;
+    right: 300px;
+    bottom : 20px;
+   
+  
   }
   .nav-menu {
     display: none;

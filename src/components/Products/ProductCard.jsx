@@ -58,19 +58,15 @@ const ProductPrice = styled.p`
   margin: 10px 0;
 `;
 const SortSelect = styled.select`
-  position: absolute;
-  top: 70px;
-  right: 20px;
-  padding: 8px;
+ padding: 8px;
   border-radius: 4px;
-  border: 1px solid #FFD700; 
+  border: 1px solid #FFD700;
   background-color: #fff;
   font-size: 1em;
-  margin-top:130px;
-   color: #333;
+  color: #333;
+  margin: 20px 0; /* Add spacing around the dropdown */
 
-    @media (max-width: 768px) {
-    position: static;
+  @media (max-width: 768px) {
     margin: 10px 0 20px;
   }
 `;
@@ -140,17 +136,13 @@ function ProductCard({ toggle }) {
 
   return (
     <>
-      <SortSelect onChange={handleSortChange}>
-        <option value="default" name="default">
-          Select sorting options
-        </option>
-        <option value="price" name="price">
-          Sort by Price
-        </option>
-        <option value="title" name="title">
-          Sort by Title
-        </option>
-      </SortSelect>
+    <div style={{ display: "flex", justifyContent: "center", paddingTop: "20px" }}>
+    <SortSelect onChange={handleSortChange}>
+      <option value="default">Select sorting options</option>
+      <option value="price">Sort by Price</option>
+      <option value="title">Sort by Title</option>
+    </SortSelect>
+  </div>
 
       <ProductContainer>
         {products.slice(0,80)

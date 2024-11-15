@@ -81,15 +81,18 @@
 .header-right {
   display: flex;
   align-items: center;
+  overflow: hidden;
   margin: 0; /* Remove default margin */
 }
 .header-right a {
   margin-left: 15px;
   font-size: 1.5em;
+  
+
   transition: transform 0.3s ease, color 0.3s ease;
 }
 .header-right a:hover {
-  color: #D4AF37;
+  color: rgb(131, 5, 26);
   transform: scale(1.2);
 }
 /* Mobile styles for 768px and below */

@@ -20,9 +20,8 @@
   - [Acknowledgements](#acknowledgements)
 
 ## Demo
-  <video width="100%" controls>
-  <source src="/shopping-app/video.webm" type="video/webm">
-  </video>
+  - Click on the image to watch the Demo 
+  [![Click here to watch the Demo](./src/assets/ecom.png)](https://drive.google.com/file/d/1Q36InB7vnMKdB1D6PISh9rHjK0Ce_-X6/view?usp=sharing)
 
 
 ## Features
